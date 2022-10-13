@@ -54,6 +54,10 @@ aside {
   width: 500px;
 }
 
+p::first-line {
+  color: orangered;
+}
+
 /* SMALLER ELEMENTS */
 h1,
 h2,
