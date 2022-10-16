@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        height: 50px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -35,11 +35,20 @@
       .container--1 {
         /* STARTER */
         font-family: sans-serif;
+        display: none;
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
+        gap: 10px;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+      }
 
-        /* CSS GRID */
+      /* CSS GRID */
+
+      .el--4 {
+        grid-row: 2 / 3;
+        grid-column: 1/2;
       }
 
       .container--2 {
@@ -49,8 +58,14 @@
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
-        height: 600px;
+        width: 300px;
+        height: 300px;
+
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-template-rows: 50px 50px 50px;
+        justify-content: center;
+        align-content: center;
 
         /* CSS GRID */
       }

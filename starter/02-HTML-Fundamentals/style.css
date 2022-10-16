@@ -1,8 +1,8 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
   font-family: sans-serif;
 
@@ -14,7 +14,7 @@ h1 {
   margin-bottom: 20px;
 }
 .product {
-  width: 500px;
+  width: 700px;
   border: 5px solid black;
   margin: 50px auto;
   position: relative;
@@ -36,10 +36,10 @@ button {
   background-color: black;
   color: aliceblue;
   border: none;
-  font-size: 44px;
+  font-size: 22px;
   cursor: pointer;
-  width: 500px;
-  padding: 20px;
+  width: 690px;
+  padding: 10px;
 }
 button:hover {
   background-color: antiquewhite;
@@ -50,6 +50,7 @@ a:link {
   text-decoration: none;
   color: blueviolet;
   margin-bottom: 20px;
+  display: block;
 }
 
 ul {
@@ -67,6 +68,9 @@ h3 {
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
   margin-left: 20px;
   display: inline-block;
@@ -113,4 +117,14 @@ h3 {
   width: 20px;
   display: inline-block;
   margin-right: 7px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
 }
